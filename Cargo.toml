@@ -1,0 +1,9 @@
+[workspace]
+members = ["lib", "program", "script"]
+resolver = "2"
+
+[workspace.dependencies]
+alloy-sol-types = "0.7.7"
+tiny-keccak = { git = "https://github.com/sp1-patches/tiny-keccak", tag = "tiny_keccak-v2.0.2-patch-v1", features = [
+    "sha3",
+] }
